@@ -13,17 +13,29 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+	body {
+	  background-color: olive;
+	}
+  }
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	box-shadow: none !important;
+	color: #363636 !important;
+	border-top: 10px solid #189FA4;
+	padding: 8px;
 }
-
+.Card{
+	margin:0px 40px 40px 40px;
+	box-shadow:none;
+	padding:56px
+}
+@media screen and (max-width: 600px) {
+	.Card{
+		margin:0px 8px 8px 8px;
+		box-shadow:none;
+		padding:16px
+	}
+  }
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +47,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.main{
+	background-color: #F4F7F8;
+}
+.ag-theme-alpine {
+    /* disable all borders */
+    --ag-borders: none;
 }
